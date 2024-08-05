@@ -1,0 +1,28 @@
+<div class="col-10 md:col-10 lg:col-8 xl:col-8">
+  <div class="text-center md:col-12 lg:col-8 xl:col-8"> 
+    <h1>{{title}}</h1>
+  </div> 
+  <div class="text-center md:col-12 lg:col-8 xl:col-8">
+    <app-persona *ngFor="let personaItem of personas; let i = index" [persona]="personaItem" [indice] = i></app-persona>
+  </div>
+  <div class="text-center md:col-12 lg:col-8 xl:col-8">
+    <app-formulario-persona></app-formulario-persona>
+  </div>
+</div>
+
+   
+    <!--<form class="form-group row">
+      <div class="form-group col-md-2">
+        <input type="text" name="nombres" id="nombres" placeholder="Nombres" class="form-control" [(ngModel)]="persona.nombres"/>
+      </div>
+      <div class="form-group col-md-2">
+        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" class="form-control" [(ngModel)]="persona.apellidos"/>
+      </div>
+      <div class="form-group col-md-2">
+        <input type="text" name="dni" id="dni" placeholder="DNI" class="form-control" [(ngModel)]="persona.dni"/>
+      </div>
+      <div class="col">
+        <button type="submit" class="btn btn-primary" (click)="agregarPersona()">Agregar</button>
+      </div>
+    </form>-->
+  

@@ -1,0 +1,23 @@
+<form class="item"> 
+    <div class="col-12 md:col-12 lg:col-8">
+        <div class="field"> 
+            <input type="text" name="nombres" id="nombres" placeholder="Nombres" #nombresInput  pInputText class="w-full"/> 
+        </div>
+    </div>
+    <div class="col-12 md:col-12 lg:col-8">
+        <div class="field"> 
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" #apellidosInput pInputText class="w-full"/> 
+        </div>
+    </div>
+    <div class="col-12 md:col-12 lg:col-8">
+        <div class="field"> 
+            <input type="text" name="dni" id="dni" placeholder="Dni" #dniInput pInputText class="w-full"/> 
+        </div>
+    </div>
+    <div class="col-12 md:col-12 lg:col-8">
+        <div class="field text-center">
+            <button pButton type="submit" label="{{btnGuardarTexto}}" (click)="agregarPersona()" #btnGuardar class="p-button border-round lg-1 w-full">
+            </button> 
+        </div>
+    </div>
+</form> 
